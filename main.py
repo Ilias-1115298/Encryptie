@@ -1,6 +1,7 @@
 from cryptography.fernet import Fernet
+from sleutelbeheer import sleutel_laden
 
-key = Fernet.generate_key()
+key = sleutel_laden()
 
 f = Fernet(key)
 
@@ -9,5 +10,5 @@ message = "Dit is geheim"
 versleuteld = f.encrypt(message.encode())
 print(versleuteld)
 
-ontsleuteld = f.decrypt(versleuteld.decode())
-print(ontsleuteld)
+ontsleuteld = f.decrypt(versleuteld)
+print(ontsleuteld.decode())
