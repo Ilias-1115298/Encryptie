@@ -1,4 +1,15 @@
 import tkinter as tk
+from cryptography.fernet import Fernet
+from sleutelbeheer import sleutel_laden
+
+key = sleutel_laden()
+f = Fernet(key)
+
+def tekst_versleutelen():
+    message = invoer.get('1.0', tk.END).strip()
+    versleuteld = f.decrypt(message.encode())
+    resultaat.delete('1.0', tk.END)
+    resultaat.insert(tk.END, versleuteld.decode())
 
 window = tk.Tk()
 window.geometry('800x600')
