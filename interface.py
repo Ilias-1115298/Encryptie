@@ -1,5 +1,5 @@
 import tkinter as tk
-from cryptography.fernet import Fernet
+from cryptography.fernet import Fernet, InvalidToken
 from sleutelbeheer import sleutel_laden
 
 key = sleutel_laden()
@@ -10,6 +10,18 @@ def tekst_versleutelen():
     versleuteld = f.decrypt(message.encode())
     resultaat.delete('1.0', tk.END)
     resultaat.insert(tk.END, versleuteld.decode())
+
+def tekst_ontsleutelen():
+    message = invoer.get('1.0', tk.END).strip()
+
+    try:
+        ontsleuteld = f.decrypt(message.encode())
+        resultaat.delete('1.0', tk.END)
+        resultaat.insert(tk.END, ontsleuteld.decode())
+
+    except (InvalidToken, ValueError):
+        resultaat.delete('1.0', tk.END)
+        resultaat.insert(tk.END, 'Ontsleutelen mislukt!')
 
 window = tk.Tk()
 window.geometry('800x600')
