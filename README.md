@@ -5,6 +5,8 @@ Voor het vak Security & Cyberwarfare heb ik een programma gemaakt waarmee je tek
 
 Voor het maken van deze applicatie heb ik Python gebruikt. Daarnaast heb ik voor de gebruikersinterface gebruik gemaakt van Tkinter. Ik heb daarnaast ook gebruik gemaakt van de cryptography library voor het versleutelen en ontsleutelen van de tekst. 
 
+Naast het maken van de applicatie heb ik ook onderzoek gedaan naar symmetrische en asymmetrische encryptie, AES en Kerckhoffs's Principe. Dit onderzoek is terug te vinden in de map docs.
+
 
 ### Hoe werkt de applicatie?
 De gebruiker heeft een eenvoudige gebruikersinterface die ik heb gemaakt met Tkinter. De gebruiker kan een bericht invoeren en vervolgens kiezen om het bericht te versleutelen of weer te ontsleutelen.
