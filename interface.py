@@ -7,7 +7,7 @@ f = Fernet(key)
 
 def tekst_versleutelen():
     message = invoer.get('1.0', tk.END).strip()
-    versleuteld = f.decrypt(message.encode())
+    versleuteld = f.encrypt(message.encode())
     resultaat.delete('1.0', tk.END)
     resultaat.insert(tk.END, versleuteld.decode())
 
