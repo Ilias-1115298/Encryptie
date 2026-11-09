@@ -60,3 +60,8 @@ De applicatie is opgestart.
 - Turtle Code. (2025, November 13). Python Encryption Tutorial: How to Encrypt & Decrypt Data with cryptography Fernet [Video]. YouTube. https://www.youtube.com/watch?v=es_5TMQc-Bk
 - CDVI Benelux. (2026b, March 4). Wat is AES-encryptie en hoe werkt het? | CDVI Benelux. https://www.cdvibenelux.com/nl/wat-is-aes-encryptie-en-hoe-werkt-het/
 - Pereira, S., & Pereira, S. (2023b, September 14). Wat houdt het principe van Kerckhoff in? EITCA Academy. https://nl.eitca.org/internetveiligheid/eitc-is-ccf-klassieke-cryptografie-fundamentals/geschiedenis-van-cryptografie/modulaire-rekenkundige-en-historische-cijfers/Het-kerckhoffss-principe-stelt-dat-cryptosystemen-veilig-moeten-zijn%2C-zelfs-als-alleen-de-decoderingssleutel-geheim-wordt-gehouden/
+
+
+### GitHub Repository
+De volledige code en het onderzoeksdocument zijn te vinden via mijn GitHub-repository:
+https://github.com/Ilias-1115298/Encryptie
