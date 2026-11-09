@@ -33,10 +33,10 @@ label_tekst.pack(pady= 10)
 invoer = tk.Text(window, height=3, width=50)
 invoer.pack()
 
-knop_versleutelen = tk.Button(window, text='Versleutelen')
+knop_versleutelen = tk.Button(window, text='Versleutelen', command=tekst_versleutelen)
 knop_versleutelen.pack(pady= 5)
 
-knop_ontsleutelen = tk.Button(window, text='Ontsleutelen')
+knop_ontsleutelen = tk.Button(window, text='Ontsleutelen', command=tekst_ontsleutelen)
 knop_ontsleutelen.pack(pady= 5)
 
 label_resultaat = tk.Label(window, text='Resultaat')
